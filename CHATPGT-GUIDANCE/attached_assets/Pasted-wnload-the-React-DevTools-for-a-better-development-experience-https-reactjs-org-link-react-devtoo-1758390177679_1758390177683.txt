@@ -1,0 +1,44 @@
+wnload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+2SignalDisplay.tsx:176 Uncaught TypeError: Cannot read properties of null (reading 'toFixed')
+    at SignalDisplay.tsx:176:38
+    at Array.map (<anonymous>)
+    at SignalDisplay (SignalDisplay.tsx:151:30)
+    at renderWithHooks (chunk-WERSD76P.js?v=5652e280:11548:26)
+    at mountIndeterminateComponent (chunk-WERSD76P.js?v=5652e280:14926:21)
+    at beginWork (chunk-WERSD76P.js?v=5652e280:15914:22)
+    at HTMLUnknownElement.callCallback2 (chunk-WERSD76P.js?v=5652e280:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-WERSD76P.js?v=5652e280:3699:24)
+    at invokeGuardedCallback (chunk-WERSD76P.js?v=5652e280:3733:39)
+    at beginWork$1 (chunk-WERSD76P.js?v=5652e280:19765:15)Understand this error
+chunk-WERSD76P.js?v=5652e280:14032 The above error occurred in the <SignalDisplay> component:
+
+    at SignalDisplay (https://31496528-2be9-4d1d-8770-479f9830a0ad-00-3ixyv7t2rpa4c.pike.replit.dev/src/components/SignalDisplay.tsx:22:41)
+    at ErrorBoundary (https://31496528-2be9-4d1d-8770-479f9830a0ad-00-3ixyv7t2rpa4c.pike.replit.dev/src/components/ErrorBoundary.tsx:10:5)
+    at div
+    at div
+    at div
+    at TradingDashboard (https://31496528-2be9-4d1d-8770-479f9830a0ad-00-3ixyv7t2rpa4c.pike.replit.dev/src/components/TradingDashboard.tsx:28:49)
+    at main
+    at div
+    at AuthenticatedApp (https://31496528-2be9-4d1d-8770-479f9830a0ad-00-3ixyv7t2rpa4c.pike.replit.dev/src/components/AuthenticatedApp.tsx:25:28)
+    at Route (https://31496528-2be9-4d1d-8770-479f9830a0ad-00-3ixyv7t2rpa4c.pike.replit.dev/@fs/home/runner/workspace/yoyofinal-1/node_modules/.vite/deps/wouter.js?v=5652e280:323:16)
+    at Switch (https://31496528-2be9-4d1d-8770-479f9830a0ad-00-3ixyv7t2rpa4c.pike.replit.dev/@fs/home/runner/workspace/yoyofinal-1/node_modules/.vite/deps/wouter.js?v=5652e280:379:17)
+    at Router (https://31496528-2be9-4d1d-8770-479f9830a0ad-00-3ixyv7t2rpa4c.pike.replit.dev/src/App.tsx?v=z-9oKpm6ZEE2zjogVSK7p:30:42)
+    at Provider (https://31496528-2be9-4d1d-8770-479f9830a0ad-00-3ixyv7t2rpa4c.pike.replit.dev/@fs/home/runner/workspace/yoyofinal-1/node_modules/.vite/deps/chunk-XIZKKOCE.js?v=5652e280:22:15)
+    at TooltipProvider (https://31496528-2be9-4d1d-8770-479f9830a0ad-00-3ixyv7t2rpa4c.pike.replit.dev/@fs/home/runner/workspace/yoyofinal-1/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=5652e280:2253:5)
+    at QueryClientProvider (https://31496528-2be9-4d1d-8770-479f9830a0ad-00-3ixyv7t2rpa4c.pike.replit.dev/@fs/home/runner/workspace/yoyofinal-1/node_modules/.vite/deps/@tanstack_react-query.js?v=5652e280:2805:3)
+    at App
+
+React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary.
+logCapturedError @ chunk-WERSD76P.js?v=5652e280:14032Understand this error
+ErrorBoundary.tsx:26 Error boundary caught an error: TypeError: Cannot read properties of null (reading 'toFixed')
+    at SignalDisplay.tsx:176:38
+    at Array.map (<anonymous>)
+    at SignalDisplay (SignalDisplay.tsx:151:30)
+    at renderWithHooks (chunk-WERSD76P.js?v=5652e280:11548:26)
+    at mountIndeterminateComponent (chunk-WERSD76P.js?v=5652e280:14926:21)
+    at beginWork (chunk-WERSD76P.js?v=5652e280:15914:22)
+    at beginWork$1 (chunk-WERSD76P.js?v=5652e280:19753:22)
+    at performUnitOfWork (chunk-WERSD76P.js?v=5652e280:19198:20)
+    at workLoopSync (chunk-WERSD76P.js?v=5652e280:19137:13)
+    at renderRootSync (chunk-WERSD76P.js?v=5652e280:19116:15) Object
